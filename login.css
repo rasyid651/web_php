@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Memastikan padding dan border tidak menambah ukuran elemen */
+}
+/* style halaman body/utama */
+body {
+    background-color: rgb(202, 15, 15);
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Menengahkan secara horizontal */
+    align-items: center; /* Menengahkan secara vertikal */
+    scroll-behavior: smooth;
+}
+
+.login-container {
+    background-color: #f1f1f1;
+    padding: 30px 25px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: black;
+    opacity: 80%;
+    text-align: center; /* Mengganti display:flex dan justify-content:center dengan text-align:center */
+}
+
+/* form */
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid;
+    outline: none;
+    border-radius: 8px;
+
+    /* agar smooth */
+    transition: border 0.3s;
+}
+
+.login-container input:focus {
+    border-color: #f1f1f1;
+}
+
+/* style untuk tombol masuk */
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(202, 15, 15);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, bpx-shadow 0.3s ease-in-out;
+}
+
+.login-container button:hover {
+    box-shadow: 0px 2px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}

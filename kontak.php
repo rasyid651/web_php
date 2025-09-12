@@ -13,4 +13,4 @@
                </form>
            </section>
 
-       <?php include 'footer.php' ?>
+       <?php require 'footer.php' ?>
